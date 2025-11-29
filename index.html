@@ -2,41 +2,246 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Fast redirect -->
-  <meta http-equiv="refresh"
-        content="0.2; url=https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection">
+  <title>FAQ.Creditcard – Credit Card Questions Answered</title>
+  <meta name="description" content="Plain-language answers to common credit card questions: interest, fees, rewards, credit scores and protections. Independent FAQ hub for everyday cardholders." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://faq.creditcard/" />
 
-  <!-- Canonical to target -->
-  <link rel="canonical"
-        href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=redirect&utm_campaign=creditcard_collection" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="FAQ.Creditcard – Credit Card Questions Answered" />
+  <meta property="og:description" content="Understand how credit cards work with short, clear answers to real-world questions about charges, limits, rewards and security." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://faq.creditcard/" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Prevent indexing -->
-  <meta name="robots" content="noindex,follow" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQ.Creditcard – Credit Card Questions Answered" />
+  <meta name="twitter:description" content="A structured FAQ for credit cards: interest, fees, rewards, security and travel usage – in neutral, non-promotional language." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-64FE63JQ3H', {
-      'page_title': 'Redirect faq.creditcard',
-      'page_path': '/redirect/faq.creditcard'
-    });
+    gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Dark background (no white flash) -->
-  <style>
-    html, body {
-      background: #020617;
-      color: #020617;
-      margin: 0;
-      height: 100vh;
-    }
-  </style>
-</head>
-<body></body>
-</html>
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Your shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">FAQ.Creditcard</div>
+          <div class="brand-subtitle">Credit Card Questions Answered</div>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cc-page">
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      FAQ.Creditcard
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Answers to the Credit Card Questions People Actually Ask</h1>
+        <p class="hero-lead">
+          FAQ.Creditcard collects the practical questions that show up at checkout, on statements and in apps — then answers them in clear, neutral language so you can understand how your card really works.
+        </p>
+        <a class="cta" href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Browse in-depth guides on Choose.Creditcard
+        </a>
+      </div>
+    </section>
+
+    <!-- Content sections -->
+    <section id="overview" class="section">
+      <h2>What Is a Credit Card FAQ Hub?</h2>
+      <p>
+        A credit card FAQ hub is a structured place where common questions are grouped and explained without sales language. Instead of reading long marketing pages, you get short answers to the issues that normally send people to customer support: unexpected fees, pending transactions, declined payments and confusing rewards rules.
+      </p>
+      <p>
+        This site is not tied to any single bank or issuer. The aim is to focus on how typical credit card features behave in practice, using wording you might find on network documentation and cardholder agreements rather than promotional campaigns.
+      </p>
+    </section>
+
+    <section id="mechanics" class="section">
+      <h2>How Credit Cards Work Behind the Scenes</h2>
+      <p>
+        When you pay with a credit card, you are effectively drawing on a revolving line of credit. The issuer settles the transaction with the merchant now, then bills you later on your statement date. If you pay the full balance by the due date, you usually avoid interest; if not, interest accrues on the carried balance according to the card’s APR rules.
+      </p>
+      <p>
+        In the background, multiple actors are involved: the merchant, their acquiring bank, the card network and your issuer. Authorisations, reversals, refunds and chargebacks all move between these parties according to network rules, which explains why some actions show up instantly in your app while others take days to finalise.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Common Questions About Interest, Fees and Limits</h2>
+      <p>
+        Cardholders often ask why interest appears even after a payment, or why a balance is higher than expected. The usual reasons include partial payments, cash advances, or purchases made after the statement date but before the due date. Each scenario can be treated differently in the issuer’s interest calculation.
+      </p>
+      <p>
+        Questions about limits are equally frequent. Total credit limit, available credit and cash-advance limit are related but not identical. Temporary holds on hotels, fuel or car rentals can reserve part of your limit, which may look like “missing” funds until the final amount settles and the hold is released.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Rewards, Cash Back and Points – FAQ View</h2>
+      <p>
+        Rewards programmes generate many small questions: why one purchase earned fewer points, why a bonus did not post yet, or what happens to points when an item is returned. The answers usually depend on timing rules, category coding and minimum spend requirements defined in the card’s reward terms.
+      </p>
+      <p>
+        It is also common to ask whether rewards expire, how statement credits compare to travel redemptions, and what happens if you close the card. FAQ-style explanations help you connect the marketing headline, such as “3x on travel”, with the underlying rules that govern how and when value is actually delivered.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Security, Disputes and Protections</h2>
+      <p>
+        When something goes wrong — an unrecognised charge, a card lost abroad, or a merchant that never delivered — cardholders want to know what protections they have. Basic protections are defined by network and regulation, while extra coverage may be included as a card benefit or purchased as insurance.
+      </p>
+      <p>
+        FAQs in this area often cover how to lock a card, when to report a transaction as fraud, how provisional credits work and what information you need when raising a dispute. Understanding these steps in advance makes it easier to react quickly if something looks off on your statement.
+      </p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Comparing Cards Based on Typical FAQ Topics</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>FAQ Area</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Interest &amp; Grace Period</td>
+              <td>Clear explanation of when interest starts and how to avoid it</td>
+              <td>Helps you use the card for convenience without unexpected finance charges.</td>
+            </tr>
+            <tr>
+              <td>Fees</td>
+              <td>Annual fee, foreign transaction fees, cash-advance and late fees</td>
+              <td>Many common FAQ issues trace back to fees that were not fully understood.</td>
+            </tr>
+            <tr>
+              <td>Rewards Rules</td>
+              <td>Category definitions, caps, expiry and treatment of returns</td>
+              <td>Determines whether the headline reward rate matches your real spending.</td>
+            </tr>
+            <tr>
+              <td>Travel &amp; Protections</td>
+              <td>Coverage for delays, cancellations, purchases and fraud liability</td>
+              <td>Impacts how well you are protected if something goes wrong on a trip or purchase.</td>
+            </tr>
+            <tr>
+              <td>Digital Tools</td>
+              <td>App controls, alerts, instalment options and reporting</td>
+              <td>Good tooling can prevent many issues becoming FAQs in the first place.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        For structured comparisons of real products by fees, rewards and protections, visit
+        <a href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Payment Topics</h2>
+      <div class="cluster-grid">
+        <a class="cluster-card" href="https://bitcoinpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
+          <h3>BitcoinPay.Creditcard</h3>
+          <p>How Bitcoin-backed card payments are settled in practice.</p>
+        </a>
+        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
+          <h3>BTCPay.Creditcard</h3>
+          <p>Merchant-side gateways and crypto payment acceptance.</p>
+        </a>
+        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+          <h3>Tokens.Creditcard</h3>
+          <p>How token-based loyalty and incentives work with cards.</p>
+        </a>
+        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
+          <h3>DefiPay.Creditcard</h3>
+          <p>DeFi-powered card products and routing of funds.</p>
+        </a>
+        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual card numbers, controls and common support questions.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        FAQ.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site tackles a specific part of the card ecosystem so you can move from quick answers here to deeper, guide-style content when needed.
+      </p>
+      <p class="small">
+        We do not issue cards or provide individual recommendations. Our goal is to restate how features work, highlight trade-offs and point you to official terms and independent comparison tools where you can review options yourself.
+      </p>
+      <p class="small">
+        This site is informational only and does not provide financial, legal or tax advice. For decisions about opening, closing or changing a card, review official documentation and consider seeking independent advice.
+      </p>
+
+      <!-- Guides hub snippet -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/guides/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Guides hub
+        </a>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>From Quick Answers to Full Guides</h2>
+      <p class="small">
+        Use FAQ.Creditcard when you want fast clarity on a specific question — then head over to the main hub if you need side-by-side comparisons, deeper explainers or structured guides on travel cards, rewards, fees and more.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to Choose.Creditcard
+      </a>
+    </section>
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+    </p>
+  </footer>
+</body>
+</html>
