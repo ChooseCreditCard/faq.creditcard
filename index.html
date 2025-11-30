@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>FAQ.Creditcard – Credit Card Questions Answered</title>
-  <meta name="description" content="Plain-language answers to common credit card questions: interest, fees, rewards, credit scores and protections. Independent FAQ hub for everyday cardholders." />
+  <title>FAQ.Creditcard – Credit Card Questions Answered (Fees, Travel, Score)</title>
+  <meta name="description" content="Independent answers to common credit card questions: how they work, fees, interest (APR), travel use, credit scores, safety and how to compare offers without falling for marketing." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://faq.creditcard/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="FAQ.Creditcard – Credit Card Questions Answered" />
-  <meta property="og:description" content="Understand how credit cards work with short, clear answers to real-world questions about charges, limits, rewards and security." />
+  <meta property="og:description" content="Neutral FAQ about credit cards: fees, APR, travel, rewards, credit scores and safety. Educational only – part of The CreditCard Collection." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://faq.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=og_image" />
@@ -19,7 +19,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="FAQ.Creditcard – Credit Card Questions Answered" />
-  <meta name="twitter:description" content="A structured FAQ for credit cards: interest, fees, rewards, security and travel usage – in neutral, non-promotional language." />
+  <meta name="twitter:description" content="Independent answers to common credit card questions, with links to structured guides on Choose.Creditcard." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -34,7 +34,7 @@
   <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Your shared minisite styles -->
+  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-slate-950 text-slate-100">
@@ -44,13 +44,14 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">FAQ.Creditcard</div>
-          <div class="brand-subtitle">Credit Card Questions Answered</div>
+          <div class="brand-subtitle">Common Credit Card Questions – Explained</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
-        <a href="#overview">Overview</a>
-        <a href="#mechanics">How It Works</a>
-        <a href="#compare">Compare</a>
+        <a href="#questions">Top questions</a>
+        <a href="#basics">Basics</a>
+        <a href="#fees">Fees & APR</a>
+        <a href="#travel">Travel & FX</a>
       </nav>
     </div>
   </header>
@@ -66,174 +67,314 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Answers to the Credit Card Questions People Actually Ask</h1>
+        <h1>Credit Card FAQ – Straight Answers Without Sales Talk</h1>
         <p class="hero-lead">
-          FAQ.Creditcard collects the practical questions that show up at checkout, on statements and in apps — then answers them in clear, neutral language so you can understand how your card really works.
+          Most credit-card explanations mix marketing with fine print. This FAQ gives neutral answers to the
+          most common questions about how cards work, what they really cost, how they affect your credit score
+          and how to think about travel use, rewards and safety.
         </p>
-        <a class="cta" href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Browse in-depth guides on Choose.Creditcard
+        <div class="flex flex-wrap gap-3 mt-4">
+          <a class="cta" href="https://choose.creditcard/guides/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=hero_guides">
+            Go to full credit card guides
+          </a>
+          <a class="cta-secondary" href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=hero_choose">
+            Compare cards at Choose.Creditcard
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question overview -->
+    <section id="questions" class="section">
+      <h2>Most Asked Questions</h2>
+      <p>
+        Use this mini FAQ as a starting point, then jump into the more detailed guides and hubs on
+        <a href="https://choose.creditcard/guides/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=questions_guides">Choose.Creditcard</a>.
+      </p>
+
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+        <a href="#basics" class="faq-chip">How does a credit card actually work?</a>
+        <a href="#fees" class="faq-chip">What fees should I really care about?</a>
+        <a href="#apr" class="faq-chip">What is APR and why does it matter?</a>
+        <a href="#travel" class="faq-chip">Which card is best for travel & FX?</a>
+        <a href="#score" class="faq-chip">How does a card affect my credit score?</a>
+        <a href="#rewards" class="faq-chip">Points vs cashback – what’s better?</a>
+        <a href="#protections" class="faq-chip">What insurance and protections exist?</a>
+        <a href="#safety" class="faq-chip">How do I use a card safely online?</a>
+        <a href="#next-steps" class="faq-chip">What should I do before applying?</a>
+      </div>
+    </section>
+
+    <!-- Basics -->
+    <section id="basics" class="section">
+      <h2>How Does a Credit Card Actually Work?</h2>
+      <p>
+        A credit card is short-term credit from a lender. You are given a credit limit and can make purchases
+        up to that limit. Once per month, the issuer sends a statement showing what you spent, what you owe,
+        and the minimum payment due.
+      </p>
+      <p>
+        If you pay the full statement balance by the due date, you typically avoid interest on purchases.
+        If you carry a balance, interest is charged at the card’s APR (Annual Percentage Rate), which can be high
+        compared with other types of loans.
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Limit:</strong> maximum the bank allows you to owe at one time.</li>
+        <li><strong>Statement balance:</strong> what you owed at the end of the billing cycle.</li>
+        <li><strong>Minimum payment:</strong> small amount required to avoid late fees – not a recommendation.</li>
+        <li><strong>Grace period:</strong> time between statement date and due date where purchases may be interest-free if paid in full.</li>
+      </ul>
+      <p class="small mt-3">
+        For a deeper breakdown of mechanics, see the
+        <a href="https://choose.creditcard/guides/apr-basics/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_apr_basics">
+          APR basics guide
         </a>
-      </div>
-    </section>
-
-    <!-- Content sections -->
-    <section id="overview" class="section">
-      <h2>What Is a Credit Card FAQ Hub?</h2>
-      <p>
-        A credit card FAQ hub is a structured place where common questions are grouped and explained without sales language. Instead of reading long marketing pages, you get short answers to the issues that normally send people to customer support: unexpected fees, pending transactions, declined payments and confusing rewards rules.
-      </p>
-      <p>
-        This site is not tied to any single bank or issuer. The aim is to focus on how typical credit card features behave in practice, using wording you might find on network documentation and cardholder agreements rather than promotional campaigns.
+        on Choose.Creditcard.
       </p>
     </section>
 
-    <section id="mechanics" class="section">
-      <h2>How Credit Cards Work Behind the Scenes</h2>
+    <!-- Fees & APR -->
+    <section id="fees" class="section">
+      <h2>What Fees Should I Really Care About?</h2>
       <p>
-        When you pay with a credit card, you are effectively drawing on a revolving line of credit. The issuer settles the transaction with the merchant now, then bills you later on your statement date. If you pay the full balance by the due date, you usually avoid interest; if not, interest accrues on the carried balance according to the card’s APR rules.
+        Cards can come with a long list of potential fees. In practice, a few matter the most for day-to-day use:
       </p>
-      <p>
-        In the background, multiple actors are involved: the merchant, their acquiring bank, the card network and your issuer. Authorisations, reversals, refunds and chargebacks all move between these parties according to network rules, which explains why some actions show up instantly in your app while others take days to finalise.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Common Questions About Interest, Fees and Limits</h2>
-      <p>
-        Cardholders often ask why interest appears even after a payment, or why a balance is higher than expected. The usual reasons include partial payments, cash advances, or purchases made after the statement date but before the due date. Each scenario can be treated differently in the issuer’s interest calculation.
-      </p>
-      <p>
-        Questions about limits are equally frequent. Total credit limit, available credit and cash-advance limit are related but not identical. Temporary holds on hotels, fuel or car rentals can reserve part of your limit, which may look like “missing” funds until the final amount settles and the hold is released.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Rewards, Cash Back and Points – FAQ View</h2>
-      <p>
-        Rewards programmes generate many small questions: why one purchase earned fewer points, why a bonus did not post yet, or what happens to points when an item is returned. The answers usually depend on timing rules, category coding and minimum spend requirements defined in the card’s reward terms.
-      </p>
-      <p>
-        It is also common to ask whether rewards expire, how statement credits compare to travel redemptions, and what happens if you close the card. FAQ-style explanations help you connect the marketing headline, such as “3x on travel”, with the underlying rules that govern how and when value is actually delivered.
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Annual fee:</strong> what you pay each year just to hold the card.</li>
+        <li><strong>Foreign transaction / FX fee:</strong> a percentage added when you pay in a foreign currency.</li>
+        <li><strong>Interest (APR):</strong> cost of carrying a balance past the due date.</li>
+        <li><strong>Cash advance fees:</strong> extra cost for withdrawing cash or cash-like transactions.</li>
+        <li><strong>Late payment fees:</strong> charged if you miss the due date.</li>
+      </ul>
+      <p class="mt-3">
+        “No annual fee” does not automatically mean “cheap” if FX fees and interest are high. Likewise, a card with a
+        fee can be worth it if travel benefits or insurance are genuinely valuable for your pattern.
       </p>
     </section>
 
-    <section class="section">
-      <h2>Security, Disputes and Protections</h2>
+    <section id="apr" class="section">
+      <h2>What Is APR and Why Does It Matter?</h2>
       <p>
-        When something goes wrong — an unrecognised charge, a card lost abroad, or a merchant that never delivered — cardholders want to know what protections they have. Basic protections are defined by network and regulation, while extra coverage may be included as a card benefit or purchased as insurance.
+        APR stands for Annual Percentage Rate. It expresses the yearly cost of borrowing if you carry a balance,
+        including interest and certain mandatory charges. With credit cards, APR is often much higher than on
+        personal loans or mortgages.
       </p>
       <p>
-        FAQs in this area often cover how to lock a card, when to report a transaction as fraud, how provisional credits work and what information you need when raising a dispute. Understanding these steps in advance makes it easier to react quickly if something looks off on your statement.
+        If you always pay the full statement balance on time, APR may matter less. If you sometimes carry a balance,
+        a high APR can make borrowing very expensive, very quickly.
       </p>
-    </section>
-
-    <!-- Comparison block -->
-    <section id="compare" class="section">
-      <h2>Comparing Cards Based on Typical FAQ Topics</h2>
-      <div class="table-wrap">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>FAQ Area</th>
-              <th>What to Look For</th>
-              <th>Why It Matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Interest &amp; Grace Period</td>
-              <td>Clear explanation of when interest starts and how to avoid it</td>
-              <td>Helps you use the card for convenience without unexpected finance charges.</td>
-            </tr>
-            <tr>
-              <td>Fees</td>
-              <td>Annual fee, foreign transaction fees, cash-advance and late fees</td>
-              <td>Many common FAQ issues trace back to fees that were not fully understood.</td>
-            </tr>
-            <tr>
-              <td>Rewards Rules</td>
-              <td>Category definitions, caps, expiry and treatment of returns</td>
-              <td>Determines whether the headline reward rate matches your real spending.</td>
-            </tr>
-            <tr>
-              <td>Travel &amp; Protections</td>
-              <td>Coverage for delays, cancellations, purchases and fraud liability</td>
-              <td>Impacts how well you are protected if something goes wrong on a trip or purchase.</td>
-            </tr>
-            <tr>
-              <td>Digital Tools</td>
-              <td>App controls, alerts, instalment options and reporting</td>
-              <td>Good tooling can prevent many issues becoming FAQs in the first place.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="small">
-        For structured comparisons of real products by fees, rewards and protections, visit
-        <a href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          Choose.Creditcard
+      <p class="small mt-3">
+        Educational deep-dive:
+        <a href="https://choose.creditcard/guides/apr-basics/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_apr_again">
+          APR basics – Choose.Creditcard Guides
         </a>.
       </p>
     </section>
 
-    <!-- Cluster links -->
+    <!-- Travel & FX -->
+    <section id="travel" class="section">
+      <h2>Which Card Is Best for Travel & Foreign Currency?</h2>
+      <p>
+        For travel, three factors usually matter more than small differences in points:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>FX fees:</strong> 0% FX is ideal if you often pay in foreign currencies.</li>
+        <li><strong>Travel insurance:</strong> medical, delay, baggage and rental car coverage.</li>
+        <li><strong>Lounge access & perks:</strong> useful if you travel frequently or on long routes.</li>
+      </ul>
+      <p class="mt-3">
+        A “travel card” with high FX fees can destroy the value of rewards. Likewise, insurance is only useful if it
+        matches how you actually travel and if you meet the conditions (for example “must pay at least 50% of the trip with the card”).
+      </p>
+      <p class="small mt-3">
+        For structure and examples, see the
+        <a href="https://choose.creditcard/travel/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_travel_hub">
+          Travel &amp; FX hub
+        </a>
+        and the
+        <a href="https://choose.creditcard/guides/no-foreign-fee-cards/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_no_fx">
+          no-foreign-fee cards guide
+        </a>.
+      </p>
+    </section>
+
+    <!-- Credit score -->
+    <section id="score" class="section">
+      <h2>How Does a Credit Card Affect My Credit Score?</h2>
+      <p>
+        Most scoring models look at similar building blocks. A card can influence:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Payment history:</strong> paying on time is one of the most important factors.</li>
+        <li><strong>Utilization:</strong> the ratio of balance to credit limit – lower is usually better.</li>
+        <li><strong>Account age:</strong> keeping older accounts open can help average age.</li>
+        <li><strong>New credit:</strong> many applications in a short time can temporarily hurt a score.</li>
+        <li><strong>Mix of credit:</strong> having only cards vs a mix of loans can matter in some models.</li>
+      </ul>
+      <p class="mt-3">
+        Used carefully, a card can help build or rebuild credit. Used poorly, with missed payments or high utilization,
+        it can damage a score and make future borrowing more expensive.
+      </p>
+      <p class="small mt-3">
+        Learn more in the
+        <a href="https://choose.creditcard/guides/credit-score-factors/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_score_factors">
+          credit score factors guide
+        </a>
+        and the
+        <a href="https://choose.creditcard/credit-score/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_score_hub">
+          Credit Score &amp; Rebuild hub
+        </a>.
+      </p>
+    </section>
+
+    <!-- Rewards -->
+    <section id="rewards" class="section">
+      <h2>Points vs Cashback – Which Is Better?</h2>
+      <p>
+        Neither is universally better. It depends on how you spend and redeem:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Cashback:</strong> simple, predictable and usually easier to value.</li>
+        <li><strong>Points / miles:</strong> can be more valuable per unit if used for premium travel, but more complex.</li>
+        <li><strong>Loyalty points:</strong> tied to a specific airline or hotel – great if you are loyal, less flexible otherwise.</li>
+      </ul>
+      <p class="mt-3">
+        If you rarely travel, simple cashback can be more useful than miles you never use. If you fly often and are willing
+        to learn loyalty programs, points and miles can give outsized value on certain redemptions.
+      </p>
+      <p class="small mt-3">
+        Neutral overview:
+        <a href="https://choose.creditcard/guides/points-vs-cashback/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_points_vs_cashback">
+          Points vs. cashback guide
+        </a>.
+      </p>
+    </section>
+
+    <!-- Protections & safety -->
+    <section id="protections" class="section">
+      <h2>What Insurance and Protections Do Cards Provide?</h2>
+      <p>
+        Many cards include some form of protection, for example:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li>Travel insurance (medical, delays, baggage) when paying for trips.</li>
+        <li>Purchase protection and extended warranty on eligible items.</li>
+        <li>Chargeback rights if something goes wrong with a purchase.</li>
+      </ul>
+      <p class="mt-3">
+        Coverage details vary a lot between issuers and countries. The only reliable source is the official policy document.
+        Marketing pages often highlight limits but not exclusions and conditions, so always read the insurance terms themselves.
+      </p>
+      <p class="small mt-3">
+        See the
+        <a href="https://choose.creditcard/protections/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_protections_hub">
+          Insurance &amp; Protections hub
+        </a>
+        and the
+        <a href="https://choose.creditcard/guides/travel-insurance/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_travel_insurance">
+          travel insurance on cards guide
+        </a>.
+      </p>
+    </section>
+
+    <section id="safety" class="section">
+      <h2>How Do I Use a Card Safely Online and Abroad?</h2>
+      <p>
+        Basic safety practices reduce risk significantly:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li>Enable notifications for all transactions.</li>
+        <li>Use virtual cards or one-time numbers where available.</li>
+        <li>Avoid saving card details on random sites – use trusted wallets instead.</li>
+        <li>Report lost or stolen cards immediately and monitor statements.</li>
+      </ul>
+      <p class="mt-3">
+        Many modern cards also support tokenization (via wallets) and additional security layers like 3-D Secure.
+        These can help reduce the impact of compromised card details.
+      </p>
+      <p class="small mt-3">
+        For more on modern payment tech, visit the
+        <a href="https://choose.creditcard/technology/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=link_technology_hub">
+          Technology &amp; Payments hub
+        </a>.
+      </p>
+    </section>
+
+    <!-- Next steps -->
+    <section id="next-steps" class="section">
+      <h2>What Should I Do Before Applying for a Card?</h2>
+      <p>
+        Before sending an application, it can help to:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li>Clarify your main goal (travel, FX, cashback, rebuilding credit, business, etc.).</li>
+        <li>Check your current credit situation and obligations.</li>
+        <li>Read at least one guide related to your goal (travel, score, protections, etc.).</li>
+        <li>Compare a few cards with the same use-case, not random offers.</li>
+      </ul>
+      <p class="mt-3">
+        Marketing slogans like “premium”, “elite” or “double points” mean little without context. The structure on
+        Choose.Creditcard is built to help you see fees, FX charges, protections and tech features side by side.
+      </p>
+    </section>
+
+    <!-- Hub snippet (OFFICIAL) -->
     <section class="section">
-      <h2>Explore Related Payment Topics</h2>
+      <h2>Move From FAQ to Full Guides</h2>
+      <p class="small">
+        This FAQ is a front door. For deeper, structured explanations, use the Guides hub on Choose.Creditcard.
+      </p>
+
+      <div class="hub-link mt-3">
+        <a href="https://choose.creditcard/guides/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-300 hover:text-slate-50">
+          Browse all guides at the Guides &amp; Knowledge hub
+        </a>
+      </div>
+
+      <p class="small mt-4">
+        When you are ready to look at actual products, go to the main hub:
+        <a href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=bottom_choose">
+          Choose.Creditcard – comparison hub
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links: send dem videre -->
+    <section class="section">
+      <h2>Explore Related Hubs</h2>
       <div class="cluster-grid">
-        <a class="cluster-card" href="https://bitcoinpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
-          <h3>BitcoinPay.Creditcard</h3>
-          <p>How Bitcoin-backed card payments are settled in practice.</p>
+        <a class="cluster-card" href="https://choose.creditcard/travel/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_travel">
+          <h3>Travel &amp; FX hub</h3>
+          <p>Cards for foreign currency, ATM use abroad, lounges and travel insurance.</p>
         </a>
-        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
-          <h3>BTCPay.Creditcard</h3>
-          <p>Merchant-side gateways and crypto payment acceptance.</p>
+        <a class="cluster-card" href="https://choose.creditcard/rewards/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_rewards">
+          <h3>Rewards &amp; Points hub</h3>
+          <p>How different reward structures work and what to compare.</p>
         </a>
-        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
-          <h3>Tokens.Creditcard</h3>
-          <p>How token-based loyalty and incentives work with cards.</p>
+        <a class="cluster-card" href="https://choose.creditcard/credit-score/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_score">
+          <h3>Credit Score &amp; Rebuild hub</h3>
+          <p>Educational content around building and rebuilding credit with cards.</p>
         </a>
-        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
-          <h3>DefiPay.Creditcard</h3>
-          <p>DeFi-powered card products and routing of funds.</p>
-        </a>
-        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
-          <h3>VirtualPay.Creditcard</h3>
-          <p>Virtual card numbers, controls and common support questions.</p>
+        <a class="cluster-card" href="https://choose.creditcard/protections/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=cluster_protections">
+          <h3>Insurance &amp; Protections hub</h3>
+          <p>Travel insurance, purchase protection and extended warranty basics.</p>
         </a>
       </div>
     </section>
 
-    <!-- Collection section -->
+    <!-- Network note -->
     <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        FAQ.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site tackles a specific part of the card ecosystem so you can move from quick answers here to deeper, guide-style content when needed.
+        FAQ.Creditcard is part of <strong>The CreditCard Collection</strong> — a network of focused minisites
+        operated by ronarn AS. Each site covers one specific angle of card usage and then connects back to the
+        structured comparison and guide hubs on Choose.Creditcard.
       </p>
       <p class="small">
-        We do not issue cards or provide individual recommendations. Our goal is to restate how features work, highlight trade-offs and point you to official terms and independent comparison tools where you can review options yourself.
+        This page is <strong>educational only</strong>. It does not tell you which card to choose and does not
+        replace official issuer documentation, local regulations or personalised advice.
       </p>
-      <p class="small">
-        This site is informational only and does not provide financial, legal or tax advice. For decisions about opening, closing or changing a card, review official documentation and consider seeking independent advice.
-      </p>
-
-      <!-- Guides hub snippet -->
-      <div class="hub-link">
-        <a href="https://choose.creditcard/guides/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-           class="text-sm text-slate-600 hover:text-slate-900">
-          Learn more at the Guides hub
-        </a>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section">
-      <h2>From Quick Answers to Full Guides</h2>
-      <p class="small">
-        Use FAQ.Creditcard when you want fast clarity on a specific question — then head over to the main hub if you need side-by-side comparisons, deeper explainers or structured guides on travel cards, rewards, fees and more.
-      </p>
-      <a class="cta" href="https://choose.creditcard/?utm_source=faq.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Go to Choose.Creditcard
-      </a>
     </section>
   </main>
 
